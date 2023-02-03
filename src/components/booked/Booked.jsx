@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { useQuery } from "react-query";
 import { useDispatch, useSelector } from "react-redux";
-import { getcart } from "./../../store/cartSlice";
+import { getcart,deletehotel } from "./../../store/cartSlice";
 import { getCartData } from "../../store/data_provider";
+
 import { Link } from "react-router-dom";
 const Booked = () => {
   
@@ -14,6 +15,8 @@ const Booked = () => {
   }, []);
   return (
     <div className='container mx-auto'>
+       <h1 className=" pt-4  bg-gradient-to-r from-emerald-800 to-emerald-300  bg-clip-text pb-8 text-center text-5xl font-extrabold text-transparent">
+your Bookings      </h1>
       <ul className="list-group p-8 flex gap-2 flex-col">
       { cart? cart.map((hotel) => (
       <li

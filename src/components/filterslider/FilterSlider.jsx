@@ -15,12 +15,14 @@ export default function FilterSlider() {
 
   return (
     <>
-            <h1 className='text-center py-3 font-extrabold text-transparent text-7xl bg-clip-text bg-gradient-to-r from-emerald-800 to-emerald-300'>Most Popular Movies</h1>
+            <h1 className='text-center py-3 font-extrabold text-transparent text-6xl bg-clip-text bg-gradient-to-r from-emerald-800 to-emerald-300'>Popular destinations by month
+</h1>
 
        <div className=" flex flex-row flex-wrap justify-center py-5   filter-wrapper">
       {" "}
       <div className="basis-1  px-5 py-2 	">
-        <button className="btn bg-emerald-500 border-0 shadow-sm rounded-full" onClick={() => { setPageType(28)}}  >Action</button>
+        <button className="btn bg-emerald-500 border-0 shadow-sm rounded-full" onClick={() => { setPageType(28)}}  >Hilton
+</button>
       </div>
       <div className="basis-1 px-5 py-2 ">
         <button className="btn bg-emerald-500 border-0 shadow-sm rounded-full " onClick={() => { setPageType(10751)}}>History</button>

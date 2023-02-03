@@ -37,7 +37,23 @@ export const getcart = createAsyncThunk(
          return rejectWithValue(error.message);
        }
      },
-   );
+);
+export const deletehotel = createAsyncThunk(
+  "cart/deletehotel",
+  async (item, thunkAPI) => {
+    const { rejectWithValue } = thunkAPI;
+    try {
+      await fetch(`http://localhost:3001/cart/${item.id}`, {
+        method: "DELETE",
+        headers: { "content-type": "application/json;charset=UTF-8" },
+      });
+
+      return item;
+    } catch (error) {
+      return rejectWithValue(error.message);
+    }
+  },
+); 
 const cartSlice = createSlice({
      name: "cart",
      initialState: { cart:[] },
@@ -68,6 +84,19 @@ const cartSlice = createSlice({
          state.isLoading = false;
          state.error = action.payload;
        },
+         //delete books
+    [deletehotel.pending]: (state, action) => {
+      state.isLoading = true;
+      state.error = null;
+    },
+    [deletehotel.fulfilled]: (state, action) => {
+      state.isLoading = false;
+      state.cart = state.cart.filter((book) => book.id !== action.payload.id);
+    },
+    [deletehotel.rejected]: (state, action) => {
+      state.isLoading = false;
+      state.error = action.payload;
+    },
      },
    });
    export default cartSlice.reducer;
