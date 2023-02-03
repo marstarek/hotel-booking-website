@@ -2,7 +2,9 @@ import React from 'react'
 
 function Footer() {
   return (
-<footer className="footer p-10 bg-neutral text-neutral-content  inset-x-0 bottom-0 ">
+    <footer className="footer  
+ bg-base-100  border-t-2 glass border-gray-100    
+p-8     inset-x-0 bottom-0   hover:border-t-2 ">
   <div>
       
         <svg xmlns="http://www.w3.org/2000/svg"   strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">

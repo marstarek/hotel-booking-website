@@ -1055,34 +1055,14 @@
   ],
   "cart": [
     {
-      "hotelId": "40419",
-      "hotelname": "Grand Hyatt San Francisco",
-      "id": 1
+      "id": "42963",
+      "name": "Parc 55 San Francisco - A Hilton Hotel",
+      "hotelImg": "../src/assets/images/hotel/1.jpg"
     },
     {
-      "hotelId": "40441",
-      "hotelname": "InterContinental Mark Hopkins San Francisco",
-      "id": 2
-    },
-    {
-      "hotelId": "40441",
-      "hotelname": "InterContinental Mark Hopkins San Francisco",
-      "id": 3
-    },
-    {
-      "hotelId": "42963",
-      "hotelname": "Parc 55 San Francisco - A Hilton Hotel",
-      "id": 4
-    },
-    {
-      "hotelId": "8794805",
-      "hotelname": "Intercontinental San Francisco",
-      "id": 5
-    },
-    {
-      "hotelId": "8794805",
-      "hotelname": "Intercontinental San Francisco",
-      "id": 6
+      "id": "8794805",
+      "name": "Intercontinental San Francisco",
+      "hotelImg": "../src/assets/images/hotel/2.jpg"
     }
   ]
 }

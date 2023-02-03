@@ -13,9 +13,7 @@ import { Mousewheel, Pagination } from "swiper";
 function Trend({hotels}) {
 
   const [num, setNum] = useState(0);
-console.log('====================================');
-console.log(hotels);
-console.log('====================================');
+
   function randomNumberInRange() {
     return Math.floor(Math.random() * (20 + 1)) + 1;
 

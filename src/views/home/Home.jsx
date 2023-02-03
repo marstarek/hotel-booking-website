@@ -10,9 +10,7 @@ import {useQuery } from 'react-query'
 import {getData} from '../../store/data_provider'
 const Home = () => {
   const { isLoading, error, data: hotelsList } = useQuery('hotelsList', getData)
-  console.log('home');
-  console.log(hotelsList,"data");
-  console.log('home');
+
   const [page, setpage] = useState(1);
   const dispatch = useDispatch();
   useEffect(() => {

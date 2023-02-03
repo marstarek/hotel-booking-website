@@ -41,10 +41,11 @@ export const gethotel = createAsyncThunk(
     }
   },
 );
+
 // hotel/gethotels is the type of slice  we should put slice name which is "hotel " and gethotels is
 const hotelslice = createSlice({
   name: "hotel",
-  initialState: { hotel: [], isLoading: false, error: null, hotelInfo: [] },
+  initialState: { hotel: [], isLoading: false, error: null, hotelInfo: []},
   extraReducers: {
     
     [gethotels.pending]: (state, action) => {
@@ -67,6 +68,7 @@ const hotelslice = createSlice({
       state.isLoading = false;
       state.hotelInfo = action.payload;
     },
+    
   },
 });
 export default hotelslice.reducer;

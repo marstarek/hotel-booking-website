@@ -40,8 +40,11 @@ function getCartData() {
     'http://localhost:3001/cart/')
     .then(res => res.json())
     .then(cart => {
-            return cart
-        })
+      console.log(cart);
+      return cart
+    })
+    console.log(CartData);
+
     return CartData
 }
 export {getMoviesData,getTopRatedMoviesData,getList,getData,getCartData}

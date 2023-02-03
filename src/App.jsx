@@ -8,6 +8,7 @@ import Navbar from "./components/nav/Navbar"
 import Footer from "./components/footer/Footer"
 import Home from "./views/home/Home"
 import Details from "./components/details/Details";
+import Booked from "./components/booked/Booked";
 import { QueryClient, QueryClientProvider, useQuery } from 'react-query'
  
 
@@ -18,16 +19,16 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
  
-    <Navbar/> 
-         <BrowserRouter>
+   
+      <BrowserRouter>
+      <Navbar/> 
          <Routes>
            <Route path="/"  element={<Home/>} />
            <Route path="/Details/:id"  element={<Details/>} />
+           <Route path="/booked"  element={<Booked/>} />
            </Routes>
            </BrowserRouter>
-         <div className="  ">
-         <Footer /> 
-         </div>
+       
    
    
    
