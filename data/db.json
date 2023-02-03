@@ -4,6 +4,7 @@
       "brand": "Hilton",
       "displayRank": 10000,
       "id": "42963",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Flag_of_Zimbabwe.svg",
       "address": {
         "addressLine1": "55 Cyril Magnin Street",
         "cityName": "San Francisco",
@@ -14,16 +15,20 @@
       },
       "name": "Parc 55 San Francisco - A Hilton Hotel",
       "overallGuestRating": 8,
-      "starRating": 4,
+      "starRating": 2,
       "cover": "../src/assets/images/covers/1.jpg",
       "hotelImg": "../src/assets/images/hotel/1.jpg",
-      
+      "hotelImg2": "../src/assets/images/hotel/2.jpg",
+      "hotelImg3": "../src/assets/images/hotel/6.jpg",
+      "des": "Unfortunately we didn’t how or weren’t of the face that we were so close to the airport, very close 10 min away. With Uber we‘ve paid 2€ , but on our arrival day the hotel arranged a taxi for us and charged 20€ for it, which is way too much for not even 10 min drive - more expensive than in Europe. And the patrol in Egypt is very cheap. We were a little disappointed about that fact. And the guy who is in charge for the taxi who is sitting next to the entrance was not very polite either.",
       "totalReviewCount": 1580
     },
     {
       "brand": "Intercontinental",
       "displayRank": 9999,
       "id": "8794805",
+      "des": " There is also a conditioner and a fridge. Big window with a big balcony. The staff was very very helpful and approachable. They were ready to solve our problems and this was great! We loved the food here as everything was well washed before cooking and served well cooked which is not always a case in this country. The variety of dishes served was better than in other hotels.",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Zambia.svg",
       "address": {
         "addressLine1": "888 Howard Street",
         "cityName": "San Francisco",
@@ -34,17 +39,22 @@
       },
       "name": "Intercontinental San Francisco",
       "overallGuestRating": 8.6,
-      "starRating": 4.5,
+      "starRating": 3.5,
       "cover": "../src/assets/images/covers/2.jpg",
-            "hotelImg": "../src/assets/images/hotel/2.jpg",
-
+      "hotelImg": "../src/assets/images/hotel/2.jpg",
+      "hotelImg2": "../src/assets/images/hotel/6.jpg",
+      "hotelImg3": "../src/assets/images/hotel/10.jpg",
       "totalReviewCount": 685
     },
     {
       "brand": "Intercontinental",
       "displayRank": 9998,
       "id": "40441",
-      "keyFeatures": ["clean"],
+      "des": "Fantastic hotel, beautiful rooms and overall just an exceptional service. The roof top pool is just a wonderful place to relax in. The rooms themselves have an incredible bathroom and views over the Nile! Service is great. Downstairs bar is also a good spot for some evening drinks. Really enjoyed the stay here and would stay again!",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Flag_of_Uganda.svg",
+      "keyFeatures": [
+        "clean"
+      ],
       "location": {
         "address": {
           "addressLine1": "999 California Street",
@@ -78,9 +88,9 @@
         "rateIdentifier": "F1952461022E364EF4DA03888378BD2E91C3DF2CBFD8B3DB8403A4F28EFA18CD1A0C547F7A72EC9616E5811B5E5BA3B2852C1191FF93A428A64EB1400C8D913FD0AE59F1F4FB2E0B61CCA95D8F001B61D96F5C23497F0251"
       },
       "recmdScore": 0,
-      "starRating": 4,
-  "cover": "../src/assets/images/covers/3.jpg",      "hotelImg": "../src/assets/images/hotel/3.jpg",
-
+      "starRating": 3,
+      "cover": "../src/assets/images/covers/3.jpg",
+      "hotelImg": "../src/assets/images/hotel/3.jpg",
       "totalReviewCount": 696
     },
     {
@@ -100,24 +110,7 @@
         ]
       },
       "id": "40419",
-      "keyFeatures": ["clean"],
-      "location": {
-        "address": {
-          "addressLine1": "345 Stockton Street",
-          "cityName": "San Francisco",
-          "countryName": "United States",
-          "isoCountryCode": "US",
-          "provinceCode": "CA",
-          "zip": "94108"
-        },
-        "cityId": 3000002244,
-        "latitude": 37.789,
-        "longitude": -122.406901,
-        "neighborhoodId": "910051190",
-        "neighborhoodName": "Union Square East - Nob Hill",
-        "timeZone": "America/Los_Angeles",
-        "zoneId": "51190"
-      },
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg",
       "merchandising": {},
       "name": "Grand Hyatt San Francisco",
       "overallGuestRating": 8.6,
@@ -130,53 +123,28 @@
         "minCurrencyCode": "USD",
         "minPrice": "169.00",
         "payWhenYouStayAvailable": true,
-        "pclnId": "A0F037C070AA7D27D03E53DB8D81D545C393FD7CC145AF579A00D712F14ADEF26B8E6760ECFFEA645A05619AFC775AA9463C700F918728AD90525E6DDA7D764E2B9700738B369E66A8C391932BBFDE1F363FE93C5DDD443C26C398CEF21EA77AF30F847B4F8A80E3",
-        "rateIdentifier": "6B8E6760ECFFEA645A05619AFC775AA9463C700F918728AD90525E6DDA7D764E1F97ABA6AA59A49BA8C391932BBFDE1F363FE93C5DDD443CED039CA7414E84B718429759E2A4C51FD713F2524BBB801425F0009BFF61214B",
         "savingsClaimDisclaimer": "The highest price of similar properties with the same star level and neighborhood for your dates.",
         "savingsClaimPercentage": "13",
         "savingsClaimStrikePrice": "195.00"
       },
       "recmdScore": 0,
       "signInDealsAvailable": true,
-      "starRating": 4,
-  "cover": "../src/assets/images/covers/18.jpg",   
-  "hotelImg": "../src/assets/images/hotel/8.jpg",
-  "totalReviewCount": 579
+      "starRating": 1,
+      "cover": "../src/assets/images/covers/18.jpg",
+      "hotelImg": "../src/assets/images/hotel/8.jpg",
+      "hotelImg2": "../src/assets/images/hotel/13.jpg",
+      "hotelImg3": "../src/assets/images/hotel/14.jpg",
+      "des": " There is also a conditioner and a fridge. Big window with a big balcony. The staff was very very helpful and approachable. They were ready to solve our problems and this was great! We loved the food here as everything was well washed before cooking and served well cooked which is not always a case in this country. The variety of dishes served was better than in other hotels.",
+      "totalReviewCount": 579
     },
     {
       "brand": "Hyatt",
       "displayRank": 9996,
-      "hotelFeatures": {
-        "hotelAmenityCodes": [
-          "FINTRNT",
-          "FINTRPUB",
-          "HEALTHSVCS",
-          "RESTRNT",
-          "FITSPA",
-          "PETALLOW",
-          "HANDFAC",
-          "NSMKFAC"
-        ]
-      },
       "id": "40418",
-      "keyFeatures": ["clean"],
-      "location": {
-        "address": {
-          "addressLine1": "5 Embarcadero Center",
-          "cityName": "San Francisco",
-          "countryName": "United States",
-          "isoCountryCode": "US",
-          "provinceCode": "CA",
-          "zip": "94111"
-        },
-        "cityId": 3000002244,
-        "latitude": 37.795174,
-        "longitude": -122.395857,
-        "neighborhoodId": "910051189",
-        "neighborhoodName": "Financial District - Embarcadero",
-        "timeZone": "America/Los_Angeles",
-        "zoneId": "51189"
-      },
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_United_Arab_Emirates.svg",
+      "keyFeatures": [
+        "clean"
+      ],
       "merchandising": {},
       "name": "Hyatt Regency San Francisco",
       "overallGuestRating": 8.6,
@@ -189,53 +157,28 @@
         "minCurrencyCode": "USD",
         "minPrice": "239.00",
         "payWhenYouStayAvailable": false,
-        "pclnId": "04B1D9433CADA0174AFB798985A02519C393FD7CC145AF579A00D712F14ADEF24C007C21303A0639F66AB866942951BA37AAE969264B77413853497B14B3633E4D3974543F52C27C885E0343D9736CC0363FE93C5DDD443C26C398CEF21EA77AD9AF30911F06D128",
-        "rateIdentifier": "4C007C21303A0639F66AB866942951BA37AAE969264B77413853497B14B3633E5D4BA7A0019A9D34885E0343D9736CC0363FE93C5DDD443CED039CA7414E84B7D5F0BB14AB3A250FD713F2524BBB801425F0009BFF61214B",
         "savingsClaimDisclaimer": "The highest price of similar properties with the same star level and neighborhood for your dates.",
         "savingsClaimPercentage": "17",
         "savingsClaimStrikePrice": "289.00"
       },
       "recmdScore": 0,
       "signInDealsAvailable": true,
-      "starRating": 4,
-  "cover": "../src/assets/images/covers/13.jpg",      "hotelImg": "../src/assets/images/hotel/4.jpg",
-
+      "starRating": 2,
+      "cover": "../src/assets/images/covers/13.jpg",
+      "hotelImg": "../src/assets/images/hotel/4.jpg",
+      "hotelImg2": "../src/assets/images/hotel/15.jpg",
+      "hotelImg3": "../src/assets/images/hotel/16.jpg",
+      "des": " There is also a conditioner and a fridge. Big window with a big balcony. The staff was very very helpful and approachable. They were ready to solve our problems and this was great! We loved the food here as everything was well washed before cooking and served well cooked which is not always a case in this country. The variety of dishes served was better than in other hotels.",
       "totalReviewCount": 914
     },
     {
       "brand": "Marriott",
       "displayRank": 9995,
-      "hotelFeatures": {
-        "hotelAmenityCodes": [
-          "FINTRNT",
-          "FINTRPUB",
-          "HEALTHSVCS",
-          "RESTRNT",
-          "FITSPA",
-          "SPA",
-          "HANDFAC",
-          "NSMKFAC"
-        ]
-      },
       "id": "41215",
-      "keyFeatures": ["clean"],
-      "location": {
-        "address": {
-          "addressLine1": "780 Mission Street",
-          "cityName": "San Francisco",
-          "countryName": "United States",
-          "isoCountryCode": "US",
-          "provinceCode": "CA",
-          "zip": "94103"
-        },
-        "cityId": 3000002244,
-        "latitude": 37.78508,
-        "longitude": -122.405022,
-        "neighborhoodId": "910051188",
-        "neighborhoodName": "South of Market - Moscone Center",
-        "timeZone": "America/Los_Angeles",
-        "zoneId": "51188"
-      },
+      "flag": "https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg",
+      "keyFeatures": [
+        "clean"
+      ],
       "merchandising": {},
       "name": "San Francisco Marriott Marquis",
       "overallGuestRating": 8.6,
@@ -248,43 +191,35 @@
         "minCurrencyCode": "USD",
         "minPrice": "155.00",
         "payWhenYouStayAvailable": true,
-        "pclnId": "6A121C55D3FB4B646FC40F01DA72E1B5C393FD7CC145AF579A00D712F14ADEF2A7C0EAD718EE14A27C941943F7A069EBFA4AAF1770C7D4D088B409FB9A07ED23BD858B9270C3167F55237FFD8D1C38FA852C1191FF93A4281C5B15BACACBEC541643039C2D67C35C408E232E179DAC6F",
-        "rateIdentifier": "A7C0EAD718EE14A27C941943F7A069EBFA4AAF1770C7D4D088B409FB9A07ED23E6DBB84913326D2B55237FFD8D1C38FA852C1191FF93A428A64EB1400C8D913F146863FB668E56121D37A9E706650D8DD96F5C23497F0251",
         "savingsClaimDisclaimer": "The highest price of similar properties with the same star level and neighborhood for your dates.",
         "savingsClaimPercentage": "38",
         "savingsClaimStrikePrice": "249.00"
       },
       "recmdScore": 0,
-      "starRating": 4,
-  "cover": "../src/assets/images/covers/5.jpg",      "hotelImg": "../src/assets/images/hotel/5.jpg",
-
+      "starRating": 3,
+      "cover": "../src/assets/images/covers/5.jpg",
+      "hotelImg": "../src/assets/images/hotel/5.jpg",
+      "hotelImg2": "../src/assets/images/hotel/14.jpg",
+      "hotelImg3": "../src/assets/images/hotel/15.jpg",
+      "des": " There is also a conditioner and a fridge. Big window with a big balcony. The staff was very very helpful and approachable. They were ready to solve our problems and this was great! We loved the food here as everything was well washed .",
       "totalReviewCount": 649
     },
     {
-      "brand": "Warwick International Hotels",
+      "brand": "Warwick  Hotels",
       "displayRank": 9994,
       "hotelFeatures": {
-        "hotelAmenityCodes": ["FINTRNT", "RESTRNT", "HANDFAC", "NSMKFAC"]
+        "hotelAmenityCodes": [
+          "FINTRNT",
+          "RESTRNT",
+          "HANDFAC",
+          "NSMKFAC"
+        ]
       },
       "id": "42693",
-      "keyFeatures": ["clean"],
-      "location": {
-        "address": {
-          "addressLine1": "490 Geary Street",
-          "cityName": "San Francisco",
-          "countryName": "United States",
-          "isoCountryCode": "US",
-          "provinceCode": "CA",
-          "zip": "CA 94107"
-        },
-        "cityId": 3000002244,
-        "latitude": 37.787001,
-        "longitude": -122.411335,
-        "neighborhoodId": "910051191",
-        "neighborhoodName": "Union Square West",
-        "timeZone": "America/Los_Angeles",
-        "zoneId": "51191"
-      },
+      "flag": "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
+      "keyFeatures": [
+        "clean"
+      ],
       "merchandising": {},
       "name": "Warwick San Francisco",
       "overallGuestRating": 8.4,
@@ -297,13 +232,15 @@
         "minCurrencyCode": "USD",
         "minPrice": "235.00",
         "payWhenYouStayAvailable": true,
-        "pclnId": "C59FA8095C7D8F8265F50C3A7149D701C393FD7CC145AF574DCF0272FA17A5126E0D8F377DC1C585E4EB58A3E1930FDFB37FAA519928DCBA7A228C7B7BC13100408E232E179DAC6F",
         "rateIdentifier": "6E0D8F377DC1C585E4EB58A3E1930FDF161302FEBD6A77A8F49F2D5CBB63C96EA0C19CDBF9615763A963FC682DE55B217EA3048807BEE935"
       },
       "recmdScore": 0,
       "starRating": 4,
-  "cover": "../src/assets/images/covers/6.jpg",      "hotelImg": "../src/assets/images/hotel/6.jpg",
-
+      "cover": "../src/assets/images/covers/6.jpg",
+      "hotelImg": "../src/assets/images/hotel/6.jpg",
+      "hotelImg2": "../src/assets/images/hotel/16.jpg",
+      "hotelImg3": "../src/assets/images/hotel/17.jpg",
+      "des": " There is also a conditioner and a fridge. Big window with a big balcony. The staff was very very helpful and approachable. They were ready to solve our problems and this was great! We loved the food here as everything was well washed .",
       "totalReviewCount": 120
     },
     {
@@ -321,24 +258,10 @@
         ]
       },
       "id": "42689",
-      "keyFeatures": ["clean"],
-      "location": {
-        "address": {
-          "addressLine1": "335 Powell Street",
-          "cityName": "San Francisco",
-          "countryName": "United States",
-          "isoCountryCode": "US",
-          "provinceCode": "CA",
-          "zip": "94102"
-        },
-        "cityId": 3000002244,
-        "latitude": 37.787979,
-        "longitude": -122.408365,
-        "neighborhoodId": "910051190",
-        "neighborhoodName": "Union Square East - Nob Hill",
-        "timeZone": "America/Los_Angeles",
-        "zoneId": "51190"
-      },
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Uruguay.svg",
+      "keyFeatures": [
+        "clean"
+      ],
       "merchandising": {},
       "name": "The Westin St. Francis San Francisco On Union Square",
       "overallGuestRating": 8.1,
@@ -351,8 +274,6 @@
         "minCurrencyCode": "USD",
         "minPrice": "179.00",
         "payWhenYouStayAvailable": true,
-        "pclnId": "06193D9EAE6F518DE437BA21572CEC11C393FD7CC145AF579A00D712F14ADEF2D99BCDDAC4FCE1110DF0A34AF9CFCEF5200033E65A7B5A80A12BE47B1F5BA7716FA9F5AA03405EB2183041ACF6D6947B852C1191FF93A4281C5B15BACACBEC5441C3B26C12488F90408E232E179DAC6F",
-        "rateIdentifier": "D99BCDDAC4FCE1110DF0A34AF9CFCEF5200033E65A7B5A80A12BE47B1F5BA771845227990EF5CE59183041ACF6D6947B852C1191FF93A428A64EB1400C8D913FE47A6D8E0EB11FBAFC19CCBF18B70BE1D96F5C23497F0251",
         "savingsClaimDisclaimer": "The highest price of similar properties with the same star level and neighborhood for your dates.",
         "savingsClaimPercentage": "8",
         "savingsClaimStrikePrice": "195.00"
@@ -360,8 +281,11 @@
       "recmdScore": 0,
       "signInDealsAvailable": true,
       "starRating": 4,
-  "cover": "../src/assets/images/covers/7.jpg",      "hotelImg": "../src/assets/images/hotel/7.jpg",
-
+      "cover": "../src/assets/images/covers/7.jpg",
+      "hotelImg": "../src/assets/images/hotel/7.jpg",
+      "hotelImg2": "../src/assets/images/hotel/18.jpg",
+      "hotelImg3": "../src/assets/images/hotel/20.jpg",
+      "des": " There is also a conditioner and a fridge. Big window with a big balcony. The staff was very very helpful and approachable. They were ready to solve our problems and this was great! We loved the food here as everything was well washed .",
       "totalReviewCount": 976
     },
     {
@@ -378,6 +302,7 @@
         ]
       },
       "id": "3296705",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Vanuatu.svg",
       "location": {
         "address": {
           "addressLine1": "2601 Mason Street",
@@ -434,8 +359,8 @@
       },
       "recmdScore": 0,
       "starRating": 2.5,
-  "cover": "../src/assets/images/covers/4.jpg",      "hotelImg": "../src/assets/images/hotel/8.jpg",
-
+      "cover": "../src/assets/images/covers/4.jpg",
+      "hotelImg": "../src/assets/images/hotel/8.jpg",
       "totalReviewCount": 126
     },
     {
@@ -454,7 +379,10 @@
         ]
       },
       "id": "4422405",
-      "keyFeatures": ["clean"],
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg",
+      "keyFeatures": [
+        "clean"
+      ],
       "location": {
         "address": {
           "addressLine1": "55 5th Street",
@@ -499,9 +427,8 @@
       },
       "recmdScore": 0,
       "starRating": 4,
-  "cover": "../src/assets/images/covers/6.jpg",     
-   "hotelImg": "../src/assets/images/hotel/15.jpg",
-
+      "cover": "../src/assets/images/covers/6.jpg",
+      "hotelImg": "../src/assets/images/hotel/13.jpg",
       "totalReviewCount": 92
     },
     {
@@ -519,6 +446,7 @@
         ]
       },
       "id": "64359604",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Yemen.svg",
       "location": {
         "address": {
           "addressLine1": "1485 Bush Street",
@@ -575,8 +503,8 @@
       },
       "recmdScore": 0,
       "starRating": 3,
-  "cover": "../src/assets/images/covers/7.jpg",      "hotelImg": "../src/assets/images/hotel/7.jpg",
-
+      "cover": "../src/assets/images/covers/7.jpg",
+      "hotelImg": "../src/assets/images/hotel/7.jpg",
       "totalReviewCount": 74
     },
     {
@@ -595,7 +523,10 @@
         ]
       },
       "id": "41216",
-      "keyFeatures": ["clean"],
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Flag_of_Wallis_and_Futuna.svg",
+      "keyFeatures": [
+        "clean"
+      ],
       "location": {
         "address": {
           "addressLine1": "1250 Columbus Avenue",
@@ -630,8 +561,8 @@
       },
       "recmdScore": 0,
       "starRating": 4,
-  "cover": "../src/assets/images/covers/16.jpg",      "hotelImg": "../src/assets/images/hotel/12.jpg",
-
+      "cover": "../src/assets/images/covers/16.jpg",
+      "hotelImg": "../src/assets/images/hotel/12.jpg",
       "totalReviewCount": 860
     },
     {
@@ -651,6 +582,7 @@
         ]
       },
       "id": "39960",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg",
       "location": {
         "address": {
           "addressLine1": "750 Kearny Street",
@@ -688,8 +620,8 @@
       },
       "recmdScore": 0,
       "starRating": 4,
-  "cover": "../src/assets/images/covers/12.jpg",      "hotelImg": "../src/assets/images/hotel/10.jpg",
-
+      "cover": "../src/assets/images/covers/12.jpg",
+      "hotelImg": "../src/assets/images/hotel/10.jpg",
       "totalReviewCount": 1252
     },
     {
@@ -711,7 +643,10 @@
         ]
       },
       "id": "40416",
-      "keyFeatures": ["clean"],
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Uzbekistan.svg",
+      "keyFeatures": [
+        "clean"
+      ],
       "location": {
         "address": {
           "addressLine1": "555 North Point St",
@@ -746,9 +681,9 @@
       },
       "recmdScore": 0,
       "signInDealsAvailable": true,
-      "starRating": 4,
-  "cover": "../src/assets/images/covers/13.jpg",      "hotelImg": "../src/assets/images/hotel/11.jpg",
-
+      "starRating": 3,
+      "cover": "../src/assets/images/covers/13.jpg",
+      "hotelImg": "../src/assets/images/hotel/11.jpg",
       "totalReviewCount": 986
     },
     {
@@ -768,7 +703,10 @@
         ]
       },
       "id": "72740604",
-      "keyFeatures": ["clean"],
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_the_Turks_and_Caicos_Islands.svg",
+      "keyFeatures": [
+        "clean"
+      ],
       "location": {
         "address": {
           "addressLine1": "1100 Market Street, Entrance At 45 Mcallister",
@@ -802,9 +740,9 @@
         "rateIdentifier": "62883FDE72F026F6438C898A2FD67C0149A9C1B019EA4D350C3BC653366B1D82BA8D5C0D2CA37F8AAE56C2FD6760F7A26B5DCC6471886E75"
       },
       "recmdScore": 0,
-      "starRating": 4,
-  "cover": "../src/assets/images/covers/14.jpg",      "hotelImg": "../src/assets/images/hotel/12.jpg",
-
+      "starRating": 2,
+      "cover": "../src/assets/images/covers/14.jpg",
+      "hotelImg": "../src/assets/images/hotel/12.jpg",
       "totalReviewCount": 246
     },
     {
@@ -822,7 +760,10 @@
         ]
       },
       "id": "3993805",
-      "keyFeatures": ["clean"],
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg",
+      "keyFeatures": [
+        "clean"
+      ],
       "location": {
         "address": {
           "addressLine1": "580 Geary Street",
@@ -860,8 +801,8 @@
       },
       "recmdScore": 0,
       "starRating": 4,
-  "cover": "../src/assets/images/covers/15.jpg",      "hotelImg": "../src/assets/images/hotel/13.jpg",
-
+      "cover": "../src/assets/images/covers/15.jpg",
+      "hotelImg": "../src/assets/images/hotel/13.jpg",
       "totalReviewCount": 139
     },
     {
@@ -881,7 +822,10 @@
         ]
       },
       "id": "39381",
-      "keyFeatures": ["clean"],
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Turkmenistan.svg",
+      "keyFeatures": [
+        "clean"
+      ],
       "location": {
         "address": {
           "addressLine1": "950 Mason Street",
@@ -920,8 +864,8 @@
       },
       "recmdScore": 0,
       "starRating": 5,
-  "cover": "../src/assets/images/covers/16.jpg",      "hotelImg": "../src/assets/images/hotel/8.jpg",
-
+      "cover": "../src/assets/images/covers/16.jpg",
+      "hotelImg": "../src/assets/images/hotel/8.jpg",
       "totalReviewCount": 222
     },
     {
@@ -941,6 +885,7 @@
         ]
       },
       "id": "1385904",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg",
       "location": {
         "address": {
           "addressLine1": "424 Clay Street",
@@ -979,8 +924,8 @@
       },
       "recmdScore": 0,
       "starRating": 4,
-  "cover": "../src/assets/images/covers/17.jpg",      "hotelImg": "../src/assets/images/hotel/2.jpg",
-
+      "cover": "../src/assets/images/covers/17.jpg",
+      "hotelImg": "../src/assets/images/hotel/2.jpg",
       "totalReviewCount": 1288
     },
     {
@@ -998,6 +943,7 @@
         ]
       },
       "id": "3686505",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Tunisia.svg",
       "location": {
         "address": {
           "addressLine1": "610 Polk Street",
@@ -1039,8 +985,8 @@
       },
       "recmdScore": 0,
       "starRating": 2.5,
-  "cover": "../src/assets/images/covers/18.jpg",      "hotelImg": "../src/assets/images/hotel/6.jpg",
-
+      "cover": "../src/assets/images/covers/18.jpg",
+      "hotelImg": "../src/assets/images/hotel/6.jpg",
       "totalReviewCount": 122
     },
     {
@@ -1061,7 +1007,10 @@
         ]
       },
       "id": "41246",
-      "keyFeatures": ["clean"],
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/6/64/Flag_of_Trinidad_and_Tobago.svg",
+      "keyFeatures": [
+        "clean"
+      ],
       "location": {
         "address": {
           "addressLine1": "222 Mason Street",
@@ -1099,14 +1048,41 @@
       },
       "recmdScore": 0,
       "starRating": 4,
-  "cover": "../src/assets/images/covers/2.jpg",      "hotelImg": "../src/assets/images/hotel/10.jpg",
-
+      "cover": "../src/assets/images/covers/2.jpg",
+      "hotelImg": "../src/assets/images/hotel/10.jpg",
       "totalReviewCount": 627
     }
-  ]
-  ,"cart":[
+  ],
+  "cart": [
     {
-      "name":"tarek"
+      "hotelId": "40419",
+      "hotelname": "Grand Hyatt San Francisco",
+      "id": 1
+    },
+    {
+      "hotelId": "40441",
+      "hotelname": "InterContinental Mark Hopkins San Francisco",
+      "id": 2
+    },
+    {
+      "hotelId": "40441",
+      "hotelname": "InterContinental Mark Hopkins San Francisco",
+      "id": 3
+    },
+    {
+      "hotelId": "42963",
+      "hotelname": "Parc 55 San Francisco - A Hilton Hotel",
+      "id": 4
+    },
+    {
+      "hotelId": "8794805",
+      "hotelname": "Intercontinental San Francisco",
+      "id": 5
+    },
+    {
+      "hotelId": "8794805",
+      "hotelname": "Intercontinental San Francisco",
+      "id": 6
     }
   ]
 }

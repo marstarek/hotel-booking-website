@@ -11,7 +11,7 @@ import {useQuery } from 'react-query'
 import {getData} from '../../store/data_provider'
 export default function Slider() {
   const { isLoading, error, data: hotels } = useQuery('slideData', getData);
-  console.log( hotels);
+
   return (
     <>
       <Swiper

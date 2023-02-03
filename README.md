@@ -1,7 +1,7 @@
 
 # React.JS movies platform  
 
-responsive website hotel booking platform
+responsive website movies platform
 
 1- Create a hotel booking front end.
 2- The front end should have a list of hotels.

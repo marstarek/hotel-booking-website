@@ -28,7 +28,7 @@ export const gethotel = createAsyncThunk(
       
       const result = await fetch(`
       
-https://api.thehoteldb.org/3/hotel/${item}?api_key=6a9ddc3df7630d56986815607058bfec&language=en-US`, {
+      http://localhost:3001/hotels/${item}`, {
         method: "GET",
         headers: { "content-type": "application/json;charset=UTF-8" },
       });

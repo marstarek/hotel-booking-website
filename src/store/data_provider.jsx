@@ -27,7 +27,7 @@ function getTopRatedMoviesData() {
     return TopRatedMoviesData
 }
 function getData() {
-  let MoviesData = fetch(
+  var MoviesData = fetch(
     'http://localhost:3001/hotels/')
     .then(res => res.json())
     .then(movies => {
@@ -35,4 +35,13 @@ function getData() {
         })
     return MoviesData
 }
-export {getMoviesData,getTopRatedMoviesData,getList,getData}
+function getCartData() {
+  var CartData = fetch(
+    'http://localhost:3001/cart/')
+    .then(res => res.json())
+    .then(cart => {
+            return cart
+        })
+    return CartData
+}
+export {getMoviesData,getTopRatedMoviesData,getList,getData,getCartData}

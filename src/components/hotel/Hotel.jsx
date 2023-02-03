@@ -1,29 +1,42 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useEffect, useMemo } from "react";
 import { Link } from "react-router-dom";
 import Modal from "../modal/Modal";
 
-const Hotel = ({movie}) => {
+const Hotel = ({ hotel }) => {
+
+
+  function starRating(score) {
+    const stars = useMemo(() => {
+    const stars = [];
+    for (let i = 1; i <= 5; i++) {
+      stars.push(i <=  Math.round(score)? <input  name="rating-2" className="mask mask-star-2 border-0 bg-orange-400" /> :<input  name="rating-2" className="mask mask-star-2 border-0 bg-gray-400" /> );
+    }   
+    return stars;
+  }, [score]);
+  return stars.map((el,i) => <span key={i} >{el}</span>);
+}
   return (
-       <div className="w-50 card bg-base-100 shadow-xl" key={movie.id}>
-            <Modal movie={movie} />
+       <div className="w-50 card bg-base-100 shadow-xl" key={hotel.id}>
+            <Modal hotel={hotel} />
 
                 <figure>
                   <img
-                    src={movie.image}
-                    alt="movie"
+                    src={`${hotel.hotelImg}`}
+                    alt="hotel"
                   />
                 </figure>
-                <div className="card-body 	">
-                  <h2 className="card-title ">{movie.name}</h2>
+                <div className="card-body">
+                  <h2 className="card-title ">{hotel.name}</h2>
 
                   <div className="card-actions   items-center">
                     <div className="badge badge-outline">
-                      language {movie.original_language}
+                      language {hotel.id}
                     </div>
                     <div className="badge badge border-0 bg-emerald-500">
-                      {movie.release_date}{" "}
+                      {hotel.brand}{" "}
                     </div>
-                    <Link className="show_details" to={`/Details/${movie.id}`}>
+                  
+                    <Link className="show_details" to={`/Details/${hotel.id}`}>
                       <button className="btn btn-circle border-0  bg-emerald-500">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -47,17 +60,30 @@ const Hotel = ({movie}) => {
                       </button>
                     </Link>
                     <div className="">
-                      <p> vote:{movie.vote_average}/10</p>
+                      <p> {hotel.totalReviewCount} Review</p>
 
-                      <progress
-                        className="w-25 progress progress-error border-0"
-                        value={movie.vote_average}
-                        max="10"
-                      ></progress>
-                    </div>
+           
+          </div>
+          <div className="avatar">
+  <div className="w-8 rounded">
+    <img src={`${hotel.flag}`} alt="Tailwind-CSS-Avatar-component" />
+  </div>
+</div>
+         
+          <div className="rating">
+          {
+            starRating(   hotel.starRating)
+            }
+            
+            {
+          hotel.starRating
+            }
+            
+
+</div>
                   </div>
             </div>
-            <label htmlFor={movie.id} className="btn">open modal</label>
+            <label htmlFor={hotel.id} className="btn">Book Now</label>
 
               </div>
   )

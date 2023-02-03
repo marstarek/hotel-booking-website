@@ -6,13 +6,17 @@ import Trend from '../../components/trend/Trend'
 import List from '../../components/list/List'
 import { useDispatch, useSelector } from "react-redux";
 import { gethotels,gethotel } from "../../store/hotelSlice";
-
+import {useQuery } from 'react-query'
+import {getData} from '../../store/data_provider'
 const Home = () => {
+  const { isLoading, error, data: hotelsList } = useQuery('hotelsList', getData)
+  console.log('home');
+  console.log(hotelsList,"data");
+  console.log('home');
   const [page, setpage] = useState(1);
-  const [moviepopular, setmoviepopular] = useState("popular");
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(gethotels({ page, moviepopular }));
+    dispatch(gethotels({ page}));
     
   }, [dispatch]);
   const { hotels} = useSelector((state) => state.hotels);
@@ -23,7 +27,7 @@ const Home = () => {
          <Slider  /> 
          <FilterSlider />
          <Trend hotels={hotels}/>
-         <List />
+         <List hotelsList={hotelsList} isLoading={isLoading}  />
 
 
        </>
