@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import { useQuery } from "react-query";
 import { useDispatch, useSelector } from "react-redux";
 import { getcart,deletehotel } from "./../../store/cartSlice";
-import { getCartData } from "../../store/data_provider";
 
 import { Link } from "react-router-dom";
 const Booked = () => {

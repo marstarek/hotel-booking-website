@@ -8,8 +8,6 @@
      text-align: center;
      font-size: 18px;
      background: #fff;
-   
-     /* Center slide text vertically */
      display: -webkit-box;
      display: -ms-flexbox;
      display: -webkit-flex;
@@ -31,7 +29,7 @@
      color: #fff;
      box-sizing: border-box;
      padding: 13px 16px;
-     height: 50vh;
+     height: 40vh;
    }
    
    .FilterSlider .swiper-slide img {
@@ -51,8 +49,8 @@
      vertical-align: middle;
      box-sizing: content-box;
      --value: 0;
-     --size: 2.6rem!important;
-          --thickness: calc(var(--size) / 10);
+     --size: 2.7rem!important;
+    --thickness: calc(var(--size) / 10);
  }
  .FilterSlider .swiper-wrapper{
      padding: 27px 0px;
@@ -63,5 +61,10 @@
  .filter-wrapper button{
   min-height: 2rem!important;
   height: 1.7rem!important;
+}
+.swiper-button-prev,
+.swiper-button-next{
+color: #38af80!important;
+width: 30px!important;
 }
    

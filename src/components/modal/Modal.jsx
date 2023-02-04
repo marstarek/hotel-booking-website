@@ -1,5 +1,4 @@
 import {React,useEffect,useState} from 'react'
-// import { useMutation } from 'react-query'
 import { useDispatch, useSelector } from "react-redux";
 import { insertHotel } from "./../../store/cartSlice";
 import { useForm } from "react-hook-form";
@@ -137,7 +136,7 @@ const Modal = ({ hotel }) => {
             )}
 
            
-            <button className="btn w-full border-0 bg-gradient-to-r from-emerald-700 to-emerald-500">
+            <button htmlFor={hotel.id} className="btn w-full border-0 bg-gradient-to-r from-emerald-700 to-emerald-500">
               Create Account
             </button>
           </form>

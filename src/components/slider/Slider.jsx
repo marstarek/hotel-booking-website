@@ -54,23 +54,25 @@ export default function Slider() {
                   {hotel.brand}
                 </div>
                 <div className="text" data-swiper-parallax="-100">
-                  <p>{hotel.overallGuestRating}</p>
+                <p> Rating : {hotel.overallGuestRating}</p>
                 </div>
                 <div className="button" data-swiper-parallax="-100">
                   <Link className="show_details" to={`/Details/${hotel.id}`}>
-                    <button className="btn btn-circle border-0 bg-emerald-800">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                        className="h-6 w-6"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
+                    <button className="btn  border-0 bg-emerald-600">
+                    <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                strokeWidth={1.5}
+                                stroke="currentColor"
+                                className="h-6 w-6"
+                              >
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
+                                />
+                              </svg>
                     </button>
                   </Link>
                 </div>

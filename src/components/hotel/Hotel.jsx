@@ -16,7 +16,7 @@ const Hotel = ({ hotel }) => {
   return stars.map((el,i) => <span key={i} >{el}</span>);
 }
   return (
-       <div className="w-50 card bg-base-100 shadow-xl" key={hotel.id}>
+       <div className="w-50 card bg-base-100 shadow-2xl" key={hotel.id}>
             <Modal hotel={hotel} />
             <Link className="show_details" to={`/Details/${hotel.id}`}>
 
@@ -24,6 +24,7 @@ const Hotel = ({ hotel }) => {
                   <img
                     src={`${hotel.hotelImg}`}
                     alt="hotel"
+                    className=" rounded-t-xl"
                   />
         </figure>
         </Link>

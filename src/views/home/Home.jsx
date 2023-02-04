@@ -2,7 +2,6 @@ import React,{useEffect,useState} from 'react'
 
 import Slider from '../../components/slider/Slider'
 import FilterSlider from '../../components/filterslider/FilterSlider'
-import Trend from '../../components/trend/Trend'
 import List from '../../components/list/List'
 import { useDispatch, useSelector } from "react-redux";
 import { gethotels,gethotel } from "../../store/hotelSlice";
@@ -23,8 +22,7 @@ const Home = () => {
        <>
                
          <Slider  /> 
-         <FilterSlider />
-         <Trend hotels={hotels}/>
+         <FilterSlider hotels={hotels} isLoading={isLoading} />
          <List hotelsList={hotelsList} isLoading={isLoading}  />
 
 
