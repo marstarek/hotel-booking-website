@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { insertHotel } from "./../../store/cartSlice";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
+import './modal.css'
 import { ErrorMessage } from "@hookform/error-message";
 const Modal = ({ hotel }) => {
   const { cart } = useSelector((state) => state.cart);
@@ -10,6 +11,9 @@ const Modal = ({ hotel }) => {
   const [hotelId, setHotelId] = useState('')
   const [hotelname, setHotelname] = useState('')
   const [hotelImg, setHotelImg] = useState('')
+  const [isActive, setIsActive] = useState(false);
+  const [alert, setAlert] = useState(false);
+
    useEffect(() => {
   setHotelId(hotel.id)
   setHotelname(hotel.name);
@@ -22,6 +26,16 @@ const Modal = ({ hotel }) => {
     watch,
     getValues,
   } = useForm();
+  function showAlert() {
+    return (
+      <div className="alert alert-success shadow-lg absolute right-1/4">
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current flex-shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+      <span>Thank you for booking with us</span>
+    </div>
+  </div>
+    )
+  }
   const navigate = useNavigate();
   const onSubmit = (data, e) => {
     e.preventDefault();
@@ -35,13 +49,28 @@ const Modal = ({ hotel }) => {
         username:data.Username
       }),
     )
-
+    setIsActive(current => !current);
+setTimeout(() => {
+  setAlert(true);
+}, 1000);
 
 
   };
   return (
-    <><input type="checkbox" id={hotel.id} className="modal-toggle" />
-    <div className="modal">
+    <>
+      
+      {
+        alert?showAlert():null
+      }
+      
+      
+      
+      <input type="checkbox" id={hotel.id} className=" closeBtn  modal-toggle" />
+      
+
+
+
+    <div className={isActive ? 'close modal' : 'modal open' } >
       <div className="modal-box relative">
           <label htmlFor={hotel.id} className=" bg-rose-500 border-0 btn btn-sm btn-circle absolute right-2 top-2">✕</label>
 
@@ -137,7 +166,7 @@ const Modal = ({ hotel }) => {
 
            
             <button htmlFor={hotel.id} className="btn w-full border-0 bg-gradient-to-r from-emerald-700 to-emerald-500">
-              Create Account
+            Submit 
             </button>
           </form>
 

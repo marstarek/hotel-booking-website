@@ -478,6 +478,46 @@
       "email": "tarekahmed123@yahoo.com",
       "phoneNum": "01215681923",
       "username": "tarek123"
+    },
+    {
+      "id": "4422405",
+      "name": "Hotel Zetta San Francisco",
+      "hotelImg": "../src/assets/images/hotel/13.jpg",
+      "email": "tarekahmed1568@yahoo.com",
+      "phoneNum": "01215681923",
+      "username": "tarek1212"
+    },
+    {
+      "id": "41216",
+      "name": "San Francisco Marriott Fisherman's Wharf",
+      "hotelImg": "../src/assets/images/hotel/12.jpg",
+      "email": "tarekahmed1568@yahoo.com",
+      "phoneNum": "333333333333",
+      "username": "tareksadasd"
+    },
+    {
+      "id": "64359604",
+      "name": "Calista Organic Hotel",
+      "hotelImg": "../src/assets/images/hotel/7.jpg",
+      "email": "tarekahmed1568@yahoo.com",
+      "phoneNum": "01215681923",
+      "username": "sabrysss"
+    },
+    {
+      "id": "42689",
+      "name": "The Westin St. Francis San Francisco On Union Square",
+      "hotelImg": "../src/assets/images/hotel/7.jpg",
+      "email": "tarekahmed1568@yahoo.com",
+      "phoneNum": "01215681923",
+      "username": "tarekzzzzzz"
+    },
+    {
+      "id": "42963",
+      "name": "Parc 55 San Francisco - A Hilton Hotel",
+      "hotelImg": "../src/assets/images/hotel/1.jpg",
+      "email": "tarekahmed1568@yahoo.com",
+      "phoneNum": "222222222222",
+      "username": "testssssss"
     }
   ]
 }
