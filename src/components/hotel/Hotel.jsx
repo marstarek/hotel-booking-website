@@ -28,7 +28,7 @@ const Hotel = ({ hotel }) => {
                   />
         </figure>
         </Link>
-                <div className="card-body">
+                <div className="card-body p-2 sm:p-2 md:p-6  lg:p-8 xl:p-10 ">
                   <h2 className="card-title ">{hotel.name}</h2>
 
                   <div className="card-actions   items-center">

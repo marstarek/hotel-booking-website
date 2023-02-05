@@ -4,7 +4,6 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 export const insertHotel = createAsyncThunk(
      "cart/insertHotel",
      async (cartData, thunkAPI) => {
-          console.log(cartData);
        const { rejectWithValue } = thunkAPI;
        try {
          const result = await fetch(`http://localhost:3001/cart/`, {
@@ -13,7 +12,7 @@ export const insertHotel = createAsyncThunk(
            headers: { "content-type": "application/json;charset=UTF-8" },
          });
          const data = await result.json();
-         console.log(data);
+         
 
          return data;
        } catch (error) {
@@ -77,7 +76,6 @@ const cartSlice = createSlice({
        },
        [insertHotel.fulfilled]: (state, action) => {
             state.isLoading = false;
-            console.log(action.payload);
             state.cart.push(action.payload);
        },
        [insertHotel.rejected]: (state, action) => {

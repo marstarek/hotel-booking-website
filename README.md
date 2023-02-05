@@ -1,81 +1,73 @@
 
-# React.JS movies platform  
+# React.JS Hotels booking website  
 
-responsive website movies platform
+responsive Hotels booking website
 
-1- Create a hotel booking front end.
-2- The front end should have a list of hotels.
-3- Each hotel should have a name, address, and a rating.
-4- Each hotel should have a button to book it.
-5- When the user clicks on the book button, a form should appear to enter the user's name, email, and phone number.
-6- When the user clicks on the submit button, the form should disappear and a message should appear saying "Thank you for booking with us".
-7- The user should be able to book multiple hotels.
-8- The user should be able to cancel a booking.
-9- The user should be able to see all his bookings.
+it have list of hotels,slider ,filter  with details page for more info about the hotel 
 
-npx json-server --watch data/db.json --port 3001
+Each hotel have  data stored in json server 
 
-https://blog.openreplay.com/fetching-and-updating-data-with-react-query/
+user can  book any  hotel by clicking on "book" button and enter his name, email, and 
+
+phone number in the form  
+
+and the  user can  book multiple,
+
+hotels.and cancel a booking.
+
+the  user able to see all his bookings.
+
+## Features
+
+- Light/dark mode toggle
+- Responsive
+- error and loading handling 
+- global state management with redux
+- handel asynchronous calls with Redux Thunk 
+- form validation with  react Hook form
+- using Vite  module bundler
+- using react query
+- using react router
+- using swiper the most modern touch slider with transitions amazing  behavior
+- using tailwindcss and daisyui  for styling
 
 
 
 
-
-with home page to get popular and top rated movies ,filter movies ,movie details page , pagination
-
-using React.JS ,swiper
-@reduxjs/toolkit
-react-redux
-react-router-dom
-redux-thunk
-tailwindcss
-daisyui
-postcss
-vite
 
 ## API Reference
 
-#### Get all popular movies
+#### Get all Hotels
 
 ```http
-  GET /movie/popular
+ GET /hotels
 ```
 
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `api_key` | `string` | **Required**. Your API key |
 
-#### Get the primary information about a movie.
+#### Get the primary information about a Hotel.
 
 ```http
-  GET /movie/{movie_id}
+  GET /Hotel/{Hotel_id}
 ```
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `string` | **Required**. Id of item to fetch |
 
-#### Get the top rated movies on TMDB.
+#### Get the user bookings
 
 ```http
-  GET /movie/top_rated
+  GET /cart
 ```
-
-| Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Id of item to fetch |
-| `page`      | `integer` | **optional**. Specify which page to query. |
-
-
-
 
 ## Installation
 
 Install my-project with npm
 
 ```bash
-  cd React.JS movies platform
+  cd React.JS Hotels booking website
   npm install 
+  npx json-server --watch data/db.json --port 3001
   npm run dev
   npm run build
   cd build

@@ -5,6 +5,8 @@ import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import './modal.css'
 import { ErrorMessage } from "@hookform/error-message";
+import { modalState } from '../../store/modalSlice';
+
 const Modal = ({ hotel }) => {
   const { cart } = useSelector((state) => state.cart);
   const dispatch = useDispatch();
@@ -12,9 +14,8 @@ const Modal = ({ hotel }) => {
   const [hotelname, setHotelname] = useState('')
   const [hotelImg, setHotelImg] = useState('')
   const [isActive, setIsActive] = useState(false);
-  const [alert, setAlert] = useState(false);
 
-   useEffect(() => {
+  useEffect(() => {
   setHotelId(hotel.id)
   setHotelname(hotel.name);
   setHotelImg(hotel.hotelImg)
@@ -26,16 +27,7 @@ const Modal = ({ hotel }) => {
     watch,
     getValues,
   } = useForm();
-  function showAlert() {
-    return (
-      <div className="alert alert-success shadow-lg absolute right-1/4">
-    <div>
-      <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current flex-shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-      <span>Thank you for booking with us</span>
-    </div>
-  </div>
-    )
-  }
+
   const navigate = useNavigate();
   const onSubmit = (data, e) => {
     e.preventDefault();
@@ -50,27 +42,18 @@ const Modal = ({ hotel }) => {
       }),
     )
     setIsActive(current => !current);
-setTimeout(() => {
-  setAlert(true);
-}, 1000);
-
+ 
+   
+        dispatch(modalState());
+         setTimeout(() => {
+          dispatch(modalState());
+        }, 1000);
 
   };
   return (
     <>
-      
-      {
-        alert?showAlert():null
-      }
-      
-      
-      
       <input type="checkbox" id={hotel.id} className=" closeBtn  modal-toggle" />
-      
-
-
-
-    <div className={isActive ? 'close modal' : 'modal open' } >
+    <div className={" modal " + (isActive ? 'close' : '')} >
       <div className="modal-box relative">
           <label htmlFor={hotel.id} className=" bg-rose-500 border-0 btn btn-sm btn-circle absolute right-2 top-2">✕</label>
 
@@ -97,17 +80,17 @@ setTimeout(() => {
 
             {errors.Username?.type === "required" && (
               <p className="text-rose-600" role="alert">
-                First name is required
+                User name is required
               </p>
             )}
             {errors.Username?.type === "minLength" && (
               <p className="text-rose-600" role="alert">
-                First name min Length is 5
+                User name min Length is 5
               </p>
             )}
             {errors.Username?.type === "maxLength" && (
               <p className="text-rose-600" role="alert">
-                First name max Length is 15
+                User name max Length is 15
               </p>
             )}
             {errors.Username?.type === "pattern" && (
@@ -151,7 +134,7 @@ setTimeout(() => {
               />
             </div>
             {errors.phoneNum?.type === "required" && (
-              <span className="text-rose-600"> phone Number field is required</span>
+              <span className="text-rose-600"> Phone Number field is required</span>
             )}
             {errors.phoneNum?.type === "pattern" && (
               <p className="text-rose-600" role="alert">
@@ -160,7 +143,7 @@ setTimeout(() => {
             )}
             {errors.phoneNum?.type === "minLength" && (
               <p className="text-rose-600" role="alert">
-                phone Number must be at least 11 characters
+                Phone Number must be at least 11 Numbers
               </p>
             )}
 

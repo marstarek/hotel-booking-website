@@ -1,10 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-
-
-
 export const gethotels = createAsyncThunk(
   "hotel/gethotels",
-  async (hotelData, thunkAPI) => {
+  async (_, thunkAPI) => {
     const { rejectWithValue } = thunkAPI;
     try {
 
@@ -19,7 +16,6 @@ export const gethotels = createAsyncThunk(
     }
   },
 );
-
 export const gethotel = createAsyncThunk(
   "hotel/gethotel",
   async (item, thunkAPI) => {
@@ -42,7 +38,6 @@ export const gethotel = createAsyncThunk(
   },
 );
 
-// hotel/gethotels is the type of slice  we should put slice name which is "hotel " and gethotels is
 const hotelslice = createSlice({
   name: "hotel",
   initialState: { hotel: [], isLoading: false, error: null, hotelInfo: []},

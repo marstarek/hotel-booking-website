@@ -13,7 +13,6 @@ const Details = () => {
   useEffect(() => {
     dispatch(gethotel(id))
       .unwrap()
-      .then((data) => console.log(data));
   }, [id]);
   const { isLoading, hotels, hotelInfo } = useSelector((state) => state.hotels);
 

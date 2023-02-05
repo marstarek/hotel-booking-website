@@ -31,12 +31,12 @@ your Bookings      </h1>
         <div className="btn-group basis-1/4 justify-end " role="group">
           
           <button
-            className="btn btn-outline btn-warning"
+            className="btn  btn-warning"
             type="button"
             onClick={() =>
               dispatch(deletehotel(hotel))
                 .unwrap()
-                .then((data) => console.log(data))
+               
             }
           >
             Cancel
