@@ -21,6 +21,7 @@ the  user able to see all his bookings.
 
 - Light/dark mode toggle
 - Responsive
+- json server 
 - error and loading handling 
 - global state management with redux
 - handel asynchronous calls with Redux Thunk 
