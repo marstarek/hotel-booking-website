@@ -31,10 +31,6 @@ the  user able to see all his bookings.
 - using swiper the most modern touch slider with transitions amazing  behavior
 - using tailwindcss and daisyui  for styling
 
-
-
-
-
 ## API Reference
 
 #### Get all Hotels
@@ -91,16 +87,10 @@ Install my-project with npm
 
  link to demo
 
-[deployed on  surge ](https://industrious-digestion.surge.sh/)
+[deployed on  surge ](https://gusty-destruction.surge.sh/)
 
-[deployed   on  netlify](https://fluffy-cuchufli-91a178.netlify.app/)
-
-
-
-
-
-![img1](img3.png?raw=true "Title")
 ![img1](img1.png?raw=true "Title")
 ![img1](img2.png?raw=true "Title")
+![img1](img3.png?raw=true "Title")
 ![img1](img4.png?raw=true "Title")
 ![img1](img5.png?raw=true "Title")
