@@ -6,24 +6,19 @@ import { useDispatch, useSelector } from "react-redux";
 import "swiper/css";
 import "swiper/css/pagination";
 import { useQuery } from "react-query";
-import { getMoviesData } from "../../store/data_provider";
 import { Pagination } from "swiper";
 import Loading from "../loading/Loading";
 import { Navigation } from "swiper";
+import Notfound from "../404/Notfound";
 
 export default function FilterSlider({ hotels, isLoading }) {
   const [pageType, setPageType] = useState("Hilton");
-  console.log(hotels, isLoading);
-  // const {isLoading,error,data: movies,} = useQuery("filterData", getMoviesData);
-
   function starRating(score) {
-   
     const stars = [];
     for (let i = 1; i <= 5; i++) {
-      stars.push(i <=  Math.round(score)? <input  name="rating-2" className="mask mask-star-2 border-0 bg-orange-400" /> :<input  name="rating-2" className="mask mask-star-2 border-0 bg-gray-400" /> );
+      stars.push(i <=  Math.round(score)? <input key={i}  name="rating-2" className="mask mask-star-2 border-0 bg-orange-400" /> :<input  key={i} name="rating-2" className="mask mask-star-2 border-0 bg-gray-400" /> );
     }   
     return stars;
- 
   return stars.map((el,i) => <span key={i} >{el}</span>);
 }
   return (
@@ -147,10 +142,10 @@ export default function FilterSlider({ hotels, isLoading }) {
               {hotels
                 ? hotels
                     .filter((hotel) => hotel.brand.includes(pageType))
-                    .map((hotel) => (
+                    .map((hotel,i) => (
                       <SwiperSlide
                         className="shadow-xl transition-all duration-300 rounded-lg  "
-                        key={hotel.id}
+                        key={i}
                         style={{
                           backgroundImage: `url(${hotel.hotelImg})`,
                           backgroundRepeat: "no-repeat",
@@ -203,7 +198,7 @@ export default function FilterSlider({ hotels, isLoading }) {
                         </div>
                       </SwiperSlide>
                     ))
-                : "no data"}
+                : <Notfound/>}
             </>
           )}
         </Swiper>
