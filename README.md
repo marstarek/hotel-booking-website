@@ -68,7 +68,7 @@ Install my-project with npm
   npm run dev
  
 ```
-    
+
 ## Acknowledgements
 
  - [swiperjs](https://swiperjs.com/demos#space-between)
