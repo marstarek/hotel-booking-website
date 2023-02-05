@@ -66,10 +66,7 @@ Install my-project with npm
   npm install 
   npx json-server --watch data/db.json --port 3001
   npm run dev
-  npm run build
-  cd build
-  cp index.html 200.html
-  surge
+ 
 ```
     
 ## Acknowledgements
