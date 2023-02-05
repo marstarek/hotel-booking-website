@@ -86,7 +86,11 @@ Install my-project with npm
  link to demo
 
 [deployed on  surge ](https://gusty-destruction.surge.sh/)
-[![Watch the video]](./hotel.wmv)
+## Watch the video
+
+[![Watch the video](thumb.png)](./hotel.wmv)
+
+## images
 
 ![img1](img1.png?raw=true "Title")
 ![img1](img2.png?raw=true "Title")
