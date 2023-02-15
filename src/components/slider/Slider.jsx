@@ -9,8 +9,8 @@ import { Parallax, Pagination, Navigation } from "swiper";
 import { Link } from "react-router-dom";
 import {useQuery } from 'react-query'
 import {getData} from '../../store/data_provider'
-export default function Slider() {
-  const { isLoading, error, data: hotels } = useQuery('slideData', getData);
+export default function Slider(props ) {
+  // const { isLoading, error, data: hotels } = useQuery('slideData', getData);
 
   return (
     <>
@@ -35,7 +35,7 @@ export default function Slider() {
           data-swiper-parallax="-23%"
         ></div>
 
-        {hotels? hotels.map((hotel) => (
+        {props.hotels? props.hotels.map((hotel) => (
               <SwiperSlide key={hotel.id}
                 style={{
                   backgroundImage: `url(${hotel.cover})`,

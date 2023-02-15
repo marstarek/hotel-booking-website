@@ -462,5 +462,14 @@
       "totalReviewCount": 222
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": "40418",
+      "name": "Hyatt Regency San Francisco",
+      "hotelImg": "../src/assets/images/hotel/4.jpg",
+      "email": "tarekahmed15@gmail.com",
+      "phoneNum": "01129689368",
+      "username": "tarek8455"
+    }
+  ]
 }

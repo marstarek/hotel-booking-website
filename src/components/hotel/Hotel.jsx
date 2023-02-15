@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect, useMemo } from "react";
 import { Link } from "react-router-dom";
-import Modal from "../modal/Modal";
+import Modal from "../../utils/modal/Modal";
 
 const Hotel = ({ hotel }) => {
 

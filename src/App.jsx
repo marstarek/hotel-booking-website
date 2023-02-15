@@ -1,49 +1,61 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import {
   BrowserRouter,
   Routes,
   Route,
 } from "react-router-dom";
-import Navbar from "./components/nav/Navbar"
-import Footer from "./components/footer/Footer"
+import Navbar from "./utils/nav/Navbar"
+import Footer from "./utils/footer/Footer"
 import Home from "./views/home/Home"
 import Details from "./components/details/Details";
 import Booked from "./components/booked/Booked";
+import Login from "./components/login/Login";
+import Signup from "./components/signup/Signup";
 import { QueryClient, QueryClientProvider, useQuery } from 'react-query'
- 
+import { db } from '../firebase-config';
+import { collection, getDocs } from "firebase/firestore";
+import ProtectedRoute from "./utils/ProtectedRoute/ProtectedRoute";
+import Landing from "./views/landing/Landing";
+import Layout from "./views/layout/Layout";
 
 function App() {
-  const queryClient = new QueryClient()
+  const [users, setUsers] = useState([])
+  const CollectionReference = collection(db, 'users');
+  const getUsers = async () => {
+    const data = await getDocs(CollectionReference);
+    setUsers(data.docs.map((doc) => ({ ...doc.data() })))
+    console.log(data, "users", users);
+
+  }
+  useEffect(() => {
+    getUsers()
+
+  }, [])
+
+
+
+
+
 
 
   return (
-    <QueryClientProvider client={queryClient}>
- 
-   
-      <BrowserRouter>
-        
+    <>
+      <div>
+        <div className="h-screen  flex flex-col ">
+          <Layout>
+            <Landing />
+
+            
+            </Layout>
+
+
+        </div>
+      </div>
 
 
 
 
-
-
-
-
-
-        
-      <Navbar/> 
-         <Routes>
-           <Route path="/"  element={<Home/>} />
-           <Route path="/Details/:id"  element={<Details/>} />
-           <Route path="/booked"  element={<Booked/>} />
-           </Routes>
-           </BrowserRouter>
-       
-   
-   
-   
-   </QueryClientProvider>
+    </>
   );
 }
 

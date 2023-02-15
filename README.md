@@ -31,6 +31,7 @@ the  user able to see all his bookings.
 - using react router
 - using swiper the most modern touch slider with transitions amazing  behavior
 - using tailwindcss and daisyui  for styling
+- Authentication with firebase
 
 ## API Reference
 
@@ -80,6 +81,8 @@ Install my-project with npm
  - [vite js](https://vitejs.dev/)
  - [hero icons](https://heroicons.com/)
  - [surge](https://surge.sh/)
+ - [vercel](https://vercel.com)
+ - [firebase](https://firebase.google.com)
  
 ## Demo
 
@@ -89,6 +92,9 @@ Install my-project with npm
 ## Watch the video
 
 [![Watch the video](thumb.png)](./hotel.wmv)
+## Video Demo
+
+[![Watch the video](./d2.png)](./demo.wmv)
 
 ## images
 
@@ -97,3 +103,5 @@ Install my-project with npm
 ![img1](img3.png?raw=true "Title")
 ![img1](img4.png?raw=true "Title")
 ![img1](img5.png?raw=true "Title")
+![img1](img6.png?raw=true "Title")
+![img1](img7.png?raw=true "Title")

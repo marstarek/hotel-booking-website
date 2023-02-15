@@ -7,9 +7,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { useQuery } from "react-query";
 import { Pagination } from "swiper";
-import Loading from "../loading/Loading";
+import Loading from "../../utils/loading/Loading";
 import { Navigation } from "swiper";
-import Notfound from "../404/Notfound";
+import Notfound from "../../utils/404/Notfound";
 
 export default function FilterSlider({ hotels, isLoading }) {
   const [pageType, setPageType] = useState("Hilton");
@@ -166,7 +166,7 @@ export default function FilterSlider({ hotels, isLoading }) {
                               className="show_details text-green-400 text-2xl
 
                               "
-                              to={`/Details/${hotel.id}`}
+                              to={`/details/${hotel.id}`}
                             >
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"

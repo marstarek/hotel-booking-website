@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { gethotel } from "./../../store/hotelSlice";
-import Loading from "../loading/Loading";
+import Loading from "../../utils/loading/Loading";
 
 import "./details.css";
+import Navbar from "../../utils/nav/Navbar";
 const Details = () => {
   const [page, setpage] = useState(1);
   const [hotelpopular, sethotelpopular] = useState("popular");
@@ -22,7 +23,9 @@ const Details = () => {
   };
 
   return (
-    <div className="hotel-details mx-auto  min-h-screen">
+<Fragment>
+<Navbar/>
+<div className="hotel-details mx-auto  min-h-screen">
       {isLoading ? (
         <Loading />
       ) : (
@@ -158,7 +161,12 @@ const Details = () => {
           )}
         </>
       )}
-    </div>
+    </div> 
+
+
+</Fragment>
+
+
   );
 };
 
