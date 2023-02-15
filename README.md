@@ -89,6 +89,7 @@ Install my-project with npm
  link to demo
 
 [deployed on  surge ](https://gusty-destruction.surge.sh/)
+[deployed on  vercel ](https://hotel-booking-website-khaki.vercel.app/)
 ## Watch the video
 
 [![Watch the video](thumb.png)](./hotel.wmv)
