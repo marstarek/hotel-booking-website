@@ -3,7 +3,7 @@
 
 responsive Hotels booking website
 
-it have list of hotels,slider ,filter  with details page for more info about the hotel 
+with hotels,slider ,filter,login,Sign up pages ,and   with details page for more info about the hotel 
 
 Each hotel have  data stored in json server 
 
@@ -100,9 +100,9 @@ Install my-project with npm
 ## images
 
 ![img1](img1.png?raw=true "Title")
-![img1](img2.png?raw=true "Title")
-![img1](img3.png?raw=true "Title")
-![img1](img4.png?raw=true "Title")
-![img1](img5.png?raw=true "Title")
-![img1](img6.png?raw=true "Title")
-![img1](img7.png?raw=true "Title")
+![img2](img2.png?raw=true "Title")
+![img3](img3.png?raw=true "Title")
+![img4](img4.png?raw=true "Title")
+![img5](img5.png?raw=true "Title")
+![img6](img6.png?raw=true "Title")
+![img7](img7.png?raw=true "Title")
